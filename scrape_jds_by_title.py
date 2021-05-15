@@ -39,7 +39,7 @@ def get_links(titles, gender):
                 cnt+=1
         print('Number of links = ', cnt)
         # Pause for a few seconds (random lengths of time)
-        time.sleep(secs_range)
+        time.sleep(random.choice(secs_range))
     return links
 
 def get_jds(links):
