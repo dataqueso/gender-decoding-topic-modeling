@@ -61,8 +61,8 @@ def get_jds(links):
     fptr.close()
     
 if __name__ == '__main__':
-    female_titles = pd.read_csv('data/female_occupations_top.csv')['Occupation']
-    male_titles = pd.read_csv('data/male_occupations_top.csv')['Occupation']
+    female_titles = pd.read_csv('data/female_occupations_top100.csv')['Occupation']
+    male_titles = pd.read_csv('data/male_occupations_top100.csv')['Occupation']
 
     links_a = get_links(female_titles, 'Female')
     time.sleep(10)

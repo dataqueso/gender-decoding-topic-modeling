@@ -52,8 +52,8 @@ def get_titles_by_gender(csv_file, threshold):
     print('Female occupations ', female_df.head(10))
     print('Male occupations ', male_df.head(10))
 
-    female_df.head(50).to_csv("data/female_occupations_top.csv", index=False)
-    male_df.head(50).to_csv("data/male_occupations_top.csv", index=False)
+    female_df.head(100).to_csv("data/female_occupations_top100.csv", index=False)
+    male_df.head(100).to_csv("data/male_occupations_top100.csv", index=False)
 
 
 def main():
